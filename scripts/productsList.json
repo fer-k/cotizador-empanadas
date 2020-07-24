@@ -1,0 +1,157 @@
+[
+{
+    "title": "Empanada de carne a cuchillo",
+    "type": "empanada",
+    "subType": "carne",
+    "description": "carne cortada a cuchillo, cebollas y morrón",
+    "price": 70
+},
+{
+    "title": "Empanada de pollo",
+    "type": "empanada",
+    "subType": "carne",
+    "description": "pollo, cebollas, tomate y morrón",
+    "price": 70
+},
+{
+    "title": "Empanada de jamón y queso",
+    "type": "empanada",
+    "subType": "carne-queso",
+    "description": "jamón y queso muzzarella",
+    "price": 70
+},
+{
+    "title": "Empanada de verdura",
+    "type": "empanada",
+    "subType": "vegetariana",
+    "description": "acelga, cebolla, morrón y salsa blanca",
+    "price": 70
+},
+{
+    "title": "Empanada de queso y cebolla",
+    "type": "empanada",
+    "subType": "vegetariana-queso",
+    "description": "cebollas y queso muzzarella",
+    "price": 90
+},
+{
+    "title": "Empanada de cantimpalo y queso",
+    "type": "empanada",
+    "subType": "carne-queso",
+    "description": "cantimpalo, cenbollas y quesomuzzarella",
+    "price": 90
+},
+{
+    "title": "Empanada de humita",
+    "type": "empanada",
+    "subType": "vegetariana",
+    "description": "choclo cremoso, choclo en grano, cebollas y salsa blanca",
+    "price": 90
+},
+{
+    "title": "Empanada de vacío y provoleta",
+    "type": "empanada",
+    "subType": "carne-queso",
+    "description": "vacío braseado con queso provolone y chimichurri",
+    "price": 90
+},
+{
+    "title": "Empanada de queso al pesto",
+    "type": "empanada",
+    "subType": "vegetariana-queso",
+    "description": "queso, ajo confitado, nueces y albahaca",
+    "price": 90
+},
+{
+    "title": "Empanada de cuatro quesos",
+    "type": "empanada",
+    "subType": "vegetariana-queso",
+    "description": "parmesano, roquefort, muzzarella y gruyere",
+    "price": 90
+},
+{
+    "title": "Empanada de lomo al champignon",
+    "type": "empanada",
+    "subType": "carne",
+    "description": "cebollas, lomo salseado y champignones fileteados",
+    "price": 90
+},
+{
+    "title": "Guiso de lentejas",
+    "type": "guiso",
+    "subType": "carne",
+    "description": "lentejas, zapallo, cebollas, papa, batata, panceta, chorizo colorado y carne",
+    "price": 380
+}, 
+{
+    "title": "Locro",
+    "type": "guiso",
+    "subType": "carne",
+    "description": "maiz blanco, poroto, zapallo, cebollas, papa, batata, panceta, cuerito, chorizo, cerdo",
+    "price": 400
+},
+{
+    "title": "Cazuela vegana",
+    "type": "guiso",
+    "subType": "vegetariana",
+    "description": "papa, zanahoria, batata, cebolla, tomate, arvejas, choclo",
+    "price": 300
+},
+{
+    "title": "Sopa de cebolla y queso",
+    "type": "guiso",
+    "subType": "vegetariana-queso",
+    "description": "caldo de cebolla, cebolla, queso muzzarela, queso parmesano",
+    "price": 300
+},
+{
+    "title": "Humita",
+    "type": "guiso",
+    "subType": "carne-queso",
+    "description": "choclo cremoso, choclo en grano, carne picada, cebolla de verdeo",
+    "price": 140
+},
+{
+    "title": "Agua sin gas",
+    "type": "bebida",
+    "subType": "Sin alcohol",
+    "description": null,
+    "price": 50
+},
+{
+    "title": "Coca-Cola",
+    "type": "bebida",
+    "subType": "Sin alcohol",
+    "description": null,
+    "price": 60
+},
+{
+    "id":9,
+    "title": "IPA",
+    "type": "bebida",
+    "subType": "Cerveza",
+    "description": null,
+    "price": 120
+},
+{
+    "title": "Promo 1",
+    "type": "promo",
+    "subType": null,
+    "description": "3 Empanadas comunes + 1 bebida",
+    "price": 250
+},
+{
+    "title": "Promo 2",
+    "type": "promo",
+    "subType": null,
+    "description": "3 Empanadas + 1 guiso + 2 bebidas",
+    "price": 500
+},
+{
+    "title": "Promo 3",
+    "type": "promo",
+    "subType": null,
+    "description": "2 Guisos + 2 bebidas",
+    "price": 450
+}
+]

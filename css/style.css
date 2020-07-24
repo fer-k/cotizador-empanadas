@@ -1,0 +1,408 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container.wrapper {
+    padding-bottom: 200px;
+    
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #122618;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3, h4 {
+    font-weight: 700;
+    color: #EEAD21;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p {
+    font-weight: 300;
+    color: #969696;
+}
+
+p.product-description {
+    height: 46px;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border:none;
+}
+
+.btn:hover {
+    border:none;
+}
+
+.btn:focus, .btn:active {
+    border:none;
+    background-color: #EEAD21;
+    box-shadow: none;
+}
+
+
+.modal-content button {
+    background-color: #EEAD21;
+    border: none;
+}
+
+.modal-content button:hover {
+    background-color: #F1E779;
+}
+
+.secondary-btn.cancelButton {
+    background-color: #e24a4a;
+    border: none;
+}
+
+.secondary-btn.cancelButton:hover {
+    background-color: #c33737;
+}
+
+nav {
+    padding: 10px;
+    background-color: #122618;
+}
+
+nav img {
+    width: 150px;
+}
+
+.wrapper {
+    padding-top: 50px;
+}
+
+
+section {
+    margin-bottom: 30px;
+}
+
+.filtros {
+    margin-top: 30px;
+}
+
+.filtros input, .filtros .btn {
+    margin-left: 15px;
+}
+
+.primary-btn.search-button {
+    background-color: #EEAD21;
+}
+
+
+.primary-btn.search-button:hover {
+    background-color: #F1E779;
+}
+
+.filtros fieldset {
+    display: inline-block;
+}
+
+.filtros form {
+    margin-top: 10px;
+}
+
+.product-card {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+.product-card input {
+    margin-left: 10px;
+}
+
+.promo-card {
+    background-color: rgba(241, 231, 121, 0.5);
+}
+
+.promo-card p {
+    color: #122618;
+}
+
+.promo-card p {
+    color: #122618;
+}
+
+
+.btn-add {
+    padding: 0.3rem;
+    background-color: #122618;
+}
+
+.btn-add:hover {
+    background-color: #EEAD21;
+}
+
+.btn-add svg {
+    font-size: 1.5em;
+}
+
+.btn-lg.addToOrder {
+    margin-top: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pedido {
+    padding: 20px;
+    background-color: #122618;
+}
+
+.pedido h4 {
+    margin-top: 30px;
+}
+
+.pedido button {
+    background-color: #EEAD21;
+    font-size: 0.6em;
+    margin-left: 10px;
+}
+
+.pedido h2 {
+    color: #F1E779;
+}
+
+.pedido p, .check-envio {
+    color: #F5F5F5;
+    display: inline-block;
+}
+
+.pedido button.primary-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.modal-content {
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.btn-remove {
+    float: right;
+}
+
+.modal-content {
+    color:#969696;
+}
+
+.modal-content div {
+    margin-top: 15px;
+}
+
+.modal-content select {
+    margin-top:10px;
+}
+
+/* SIDEBAR */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(18, 38, 24, 0.95); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-box-shadow: -3px -3px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: -3px -3px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: -3px -3px 20px 0px rgba(0,0,0,0.3);
+    z-index: 500;
+    
+}
+
+/*   #display-order {
+    display: none;
+} */
+
+.sidenav-content {
+    padding: 0 30px 50px 30px;
+}
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+}
+
+.sidenav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+.sidenav-content h4 {
+    margin-top: 30px;
+}
+
+.sidenav-content h3 {
+    margin-top: 30px;
+    color: #F1E779;
+}
+
+#order-empanadas-container {
+    border-bottom: solid 1px #F1E779;
+}
+
+.sidenav-content p {
+    color: white;
+}
+
+
+.product-title-order, .product-price-order  {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product-title-order, .product-price-order, .seccion-pedido .btn-add {
+    vertical-align: top;
+}
+
+.product-title-order {
+    width: 178px;
+}
+
+.sidenav-content .btn {
+    color: #122618;
+    background-color: #F1E779;
+}
+
+.sidenav-content .btn:hover {
+    background-color: #EEAD21;
+    
+    
+}
+
+.seccion-pedido .btn-add  {
+    border-radius: 50%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F1E779;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #EEAD21;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+}
+
+button.mostrar-sidenav {
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #EEAD21;
+    color: white;
+    width: 80px;
+    bottom: 20px;
+    left: 20px;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.3);
+}
+
+button.mostrar-sidenav svg {
+    font-size: 1.4em;
+}
+
+button svg{
+    pointer-events: none;
+}
+
+/* Modal Finalizar predido */
+#finalizarPedido .modal-content {
+    background-color: #122618;
+}
+
+#finalizarPedido .modal-content p {
+    color: #F5F5F5;
+}
+
+#direccion-envio {
+    display:none;
+}
+
+#direccion-envio p {
+    margin-top: 10px;
+}
+
+#direccion-envio textarea {
+    width: 100%;
+}
+
+#no-tenes {
+    display: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* SIDEBAR END*/
+
+
+@media (max-width: 1200px) {
+    p.product-description {
+        height: 65px;
+    }
+}
+
+@media (max-width: 992px) {
+    p.product-description {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    ul.product-list li {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .sidenav {
+        padding-bottom: 60px;
+    }
+}

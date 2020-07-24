@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedí tus empanadas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="scripts/app.js"></script>
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+        
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</head>
+<body id="main">
+    <nav>
+        <img src="img/logo.svg" alt="Logo">
+    </nav>
+    <div class="container wrapper">
+        <section class="row filter-container">
+            <div class="col-md-12">
+                <h1>¡Hacé tu pedido!</h1>
+                <div class="filtros">
+                    <b>Filtrar</b>
+                    <form action="#">
+                        <input type="radio" id="show-all" name="filter" checked>
+                        <label><p>Todas</p></label>
+                        <input type="radio" id="filter-meat" name="filter">
+                        <label><p>Con carne</p></label>
+                        <input type="radio" id="filter-vegetarian" name="filter">
+                        <label><p>Vegetariano</p></label>
+                        <input type="radio" id="filter-cheese" name="filter">
+                        <label><p>Con queso</p></label>
+                    </form>
+                    <div id="searching"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PROMOS -->
+        <h2>Promos</h2>
+        <section class="row" id="promo-container">
+        </section>
+        <div id="promo-modal-container">
+            
+        </div>
+        
+        
+        <h2>Empanadas</h2>
+        <section class="row" id="empanadas-container">
+            
+        </section>
+        
+        <!--Guisos-->
+        <h2>Guisos</h2>
+        <section class="row" id="guisos-container">
+            
+        </section>
+        
+        <!--Bebidas-->
+        <h2>Bebidas</h2>
+        <section class="row" id="bebidas-container">
+            
+        </section>
+        <button id="display-order" class="fixed-bottom mostrar-sidenav" onclick="openNav()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg> <span id="order-length"></span></button>
+        <!-- Use any element to open the sidenav -->
+        
+    </div>
+    <!-- End of wrapper -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-content">
+            <h4>Mi Pedido</h4>
+            <p id="no-tenes">No tenés productos en tu pedido.</p>
+            <ul id="order-container">
+            </ul>
+            <div class="seccion-pedido">
+                <h4>Total Pedido</h4>
+                <p class="price-display"></p>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-info btn-lg primary-btn" data-toggle="modal" data-target="#finalizarPedido" id="boton-Finalizar">¡Finalizar Pedido!</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="finalizarPedido" role="dialog">
+            <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <h4>Total Pedido</h4>
+                    <p class="price-display"></p>
+                    <div class="seccion-pedido">
+                        <h4>Agregar cupón de descuento</h4>
+                        <input type="checkbox" id="add-cupon">
+                        <label><p>Cupón Descuento 25%</p></label>
+                    </div>
+                    
+                    <div>
+                        <h4>Envío/Retiro</h4>
+                        <form class="check-envio" action="#">
+                            <input type="radio" id="retiro" name="envio-retiro" value="retiro" checked="checked">
+                            <label >Retiro en el Local</label><br>
+                            <input type="radio" id="envio" name="envio-retiro" value="envio">
+                            <label >Envío ($75)</label><br>
+                        </form>
+                        <div id="direccion-envio">
+                            <p>Dirección de envío</p>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4>Costo total:</h4>
+                        <p><span id="total-price"></span></p>
+                        <button type="button" class="btn btn-info btn-lg primary-btn" id="confirmar-pedido" data-toggle="modal" data-target="#finalizarPedido" onclick="closeNav()">¡Confirmar Pedido!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
