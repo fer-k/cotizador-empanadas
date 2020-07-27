@@ -63,7 +63,7 @@ function onInit() {
 
 // funcion para traer los productos del json mediante ajax
 function getProducts() {
-  var url = `scripts/ProductsList.json`;
+  var url = `scripts/productslist.json`;
   $.ajax({
     method: "GET",
     dataType: "json",
